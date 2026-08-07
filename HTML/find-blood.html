@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Blood | Blood Bank</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <nav class="navbar">
+        <div class="left">
+          <a href="index.html">
+            <h2>Blood Bank</h2>
+          </a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="right" id="nav-links">
+          <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+            <li><a href="blood-request.html"><i class="fa fa-heart"></i> Blood Request</a></li>
+            <li><a href="find-blood.html"><i class="fa fa-search"></i> Find Blood</a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+            <li><a href="register.html"><i class="fa fa-user-plus"></i> Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="page-hero">
+      <h1>Find Blood Donors</h1>
+      <p>Search by blood group and location to find willing donors near you.</p>
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+    <section class="search-main">
+      <form id="findBloodForm" class="search-box">
+        <div class="form-group">
+          <label for="fb-group">Blood Group</label>
+          <select id="fb-group" name="bloodGroup">
+            <option value="">Any</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fb-district">District / Area</label>
+          <input type="text" id="fb-district" name="district" placeholder="e.g. Chattogram" />
+        </div>
+
+        <div class="form-group">
+          <label for="fb-availability">Availability</label>
+          <select id="fb-availability" name="availability">
+            <option value="">Any</option>
+            <option>Available Now</option>
+            <option>Available This Week</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn"><i class="fa fa-search"></i> Search</button>
+      </form>
+    </section>
+
+    <!-- ================= RESULTS ================= -->
+    <section class="results-main" id="donor-results">
+      <div class="results-heading">
+        <h2>Available Donors</h2>
+        <span>6 donors found near you</span>
+      </div>
+
+      <div class="donor-grid">
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Rafiq Ahmed</h4>
+          <span class="blood-tag">O+</span>
+          <p><i class="fa fa-map-marker"></i> Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available Now</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Sumaiya Islam</h4>
+          <span class="blood-tag">A+</span>
+          <p><i class="fa fa-map-marker"></i> Nasirabad, Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available This Week</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Tanvir Hasan</h4>
+          <span class="blood-tag">B-</span>
+          <p><i class="fa fa-map-marker"></i> Agrabad, Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available Now</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Nusrat Jahan</h4>
+          <span class="blood-tag">AB+</span>
+          <p><i class="fa fa-map-marker"></i> Halishahar, Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available This Week</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Kamal Uddin</h4>
+          <span class="blood-tag">O-</span>
+          <p><i class="fa fa-map-marker"></i> Panchlaish, Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available Now</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+
+        <div class="donor-card">
+          <div class="donor-avatar"><i class="fa fa-user"></i></div>
+          <h4>Farhana Akter</h4>
+          <span class="blood-tag">B+</span>
+          <p><i class="fa fa-map-marker"></i> GEC Circle, Chattogram</p>
+          <p><i class="fa fa-clock-o"></i> Available This Week</p>
+          <a href="tel:+8801813551732" class="btn">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2><i class="fa fa-tint"></i> Blood Bank</h2>
+          <p>We connect blood donors with patients quickly and safely. Donate blood today and help save precious lives.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+            <li><a href="blood-request.html"><i class="fa fa-angle-right"></i> Blood Request</a></li>
+            <li><a href="find-blood.html"><i class="fa fa-angle-right"></i> Find Blood</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Our Services</h3>
+          <ul>
+            <li><i class="fa fa-check"></i> Blood Donation</li>
+            <li><i class="fa fa-check"></i> Emergency Blood Request</li>
+            <li><i class="fa fa-check"></i> Donor Registration</li>
+            <li><i class="fa fa-check"></i> Blood Availability</li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Info</h3>
+          <p><i class="fa fa-map-marker"></i> Chattogram, Bangladesh</p>
+          <p><i class="fa fa-phone"></i> +880 1813551732</p>
+          <p><i class="fa fa-envelope"></i> ms2150125@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blood Bank. All Rights Reserved. | Designed by MD. Sayeed</p>
+      </div>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/find-blood.js"></script>
+  </body>
+</html>

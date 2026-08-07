@@ -1,0 +1,157 @@
+/* ================= ABOUT — STATS ================= */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.stat-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    text-align:center;
+    padding:30px 15px;
+}
+
+.stat-card i{
+    font-size:28px;
+    color:var(--red);
+    margin-bottom:12px;
+}
+
+.stat-card h3{
+    font-size:1.8rem;
+    color:var(--red);
+    margin-bottom:6px;
+}
+
+.stat-card p{
+    color:var(--text-light);
+    font-size:0.9rem;
+}
+
+/* ================= ABOUT — MISSION / VISION ================= */
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.mission-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:35px 30px;
+}
+
+.mission-card i{
+    width:50px;
+    height:50px;
+    background:var(--red);
+    color:var(--white);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.mission-card h3{
+    color:var(--red);
+    margin-bottom:10px;
+}
+
+.mission-card p{
+    color:var(--text-muted);
+    line-height:1.7;
+}
+
+/* ================= ABOUT — PROCESS STEPS ================= */
+
+.steps-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.step-card{
+    text-align:center;
+    padding:20px 10px;
+}
+
+.step-number{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:var(--red);
+    color:var(--white);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    font-size:1.2rem;
+    margin:0 auto 15px;
+}
+
+.step-card h4{
+    color:var(--text-dark);
+    margin-bottom:8px;
+}
+
+.step-card p{
+    color:var(--text-light);
+    font-size:0.9rem;
+    line-height:1.6;
+}
+
+.about-cta{
+    text-align:center;
+    background:var(--red);
+    color:var(--white);
+    padding:50px 8%;
+}
+
+.about-cta h2{
+    margin-bottom:12px;
+    font-size:1.8rem;
+}
+
+.about-cta p{
+    color:var(--red-light);
+    margin-bottom:22px;
+}
+
+.about-cta .btn{
+    background:var(--white);
+    color:var(--red);
+}
+
+.about-cta .btn:hover{
+    background:var(--red-bg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+    .stats-grid{grid-template-columns:repeat(2,1fr);}
+    .steps-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:768px){
+    .mission-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:480px){
+    .stats-grid{grid-template-columns:1fr 1fr;gap:15px;}
+    .steps-grid{grid-template-columns:1fr;}
+    .stat-card h3{font-size:1.4rem;}
+}

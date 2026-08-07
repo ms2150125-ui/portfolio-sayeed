@@ -1,0 +1,133 @@
+/* ================= BLOOD REQUEST FORM ================= */
+
+.request-main{
+    padding:60px 8%;
+    display:flex;
+    justify-content:center;
+}
+
+.request-form{
+    width:100%;
+    max-width:800px;
+    background:var(--white);
+    padding:40px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.request-form h2{
+    color:var(--red);
+    margin-bottom:8px;
+}
+
+.request-form > p{
+    color:var(--text-muted);
+    margin-bottom:28px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.request-form .form-group{
+    margin-bottom:20px;
+}
+
+.request-form label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+    color:var(--text-dark);
+    font-size:0.92rem;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea{
+    width:100%;
+    padding:12px 15px;
+    border:1px solid var(--border);
+    border-radius:6px;
+    font-size:0.95rem;
+    font-family:'Poppins',sans-serif;
+    transition:var(--transition);
+    background:var(--white);
+}
+
+.request-form input:focus,
+.request-form select:focus,
+.request-form textarea:focus{
+    outline:none;
+    border-color:var(--red);
+    box-shadow:0 0 0 3px rgba(179,0,0,.1);
+}
+
+.request-form textarea{
+    resize:vertical;
+}
+
+.urgency-group{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.urgency-group label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:400;
+    background:var(--red-bg);
+    padding:8px 16px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:0.88rem;
+}
+
+.urgency-group input{
+    width:auto;
+    accent-color:var(--red);
+}
+
+.request-form .btn{
+    border:none;
+    cursor:pointer;
+    width:100%;
+    font-size:1rem;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Info side strip */
+.request-note{
+    max-width:800px;
+    margin:0 auto 10px;
+    background:var(--red-bg);
+    border-left:4px solid var(--red);
+    padding:16px 20px;
+    border-radius:6px;
+    color:var(--text-dark);
+    font-size:0.9rem;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+}
+
+.request-note i{
+    color:var(--red);
+    font-size:18px;
+    margin-top:2px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+    .request-main{padding:40px 20px;}
+    .request-form{padding:25px;}
+    .form-row{grid-template-columns:1fr;gap:0;}
+}
+
+@media(max-width:480px){
+    .urgency-group{flex-direction:column;}
+}

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Blood Bank</title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <nav class="navbar">
+        <div class="left">
+          <a href="index.html">
+            <h2>Blood Bank</h2>
+          </a>
+        </div>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="right" id="nav-links">
+          <ul>
+            <li>
+              <a href="index.html"> <i class="fa fa-home"></i> Home </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                <i class="fa fa-info-circle"></i> About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="blood-request.html">
+                <i class="fa fa-heart"></i> Blood Request
+              </a>
+            </li>
+
+            <li>
+              <a href="find-blood.html">
+                <i class="fa fa-search"></i> Find Blood
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="fa fa-envelope"></i> Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a href="login.html"> <i class="fa fa-user"></i> Login </a>
+            </li>
+
+            <li>
+              <a href="register.html"> <i class="fa fa-user-plus"></i> Register </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <section class="login-section">
+      <div class="login-box">
+        <div class="login-icon">
+          <i class="fa fa-tint"></i>
+        </div>
+
+        <h1>Welcome Back</h1>
+        <p>Login to manage your blood donation account</p>
+
+        <!-- Alert Message Box -->
+        <div id="login-alert" style="display: none; padding: 10px; margin-bottom: 15px; border-radius: 5px; font-size: 0.9rem;"></div>
+
+        <!-- Form without method="POST" to prevent HTTP 405 error -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password"><i class="fa fa-lock"></i> Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="form-extra">
+            <label class="remember">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn login-btn">
+            <i class="fa fa-sign-in"></i> Login
+          </button>
+        </form>
+
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <p class="signup-text">
+          Don't have an account? <a href="register.html">Sign Up</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-box">
+          <h2><i class="fa fa-tint"></i> Blood Bank</h2>
+
+          <p>
+            We connect blood donors with patients quickly and safely. Donate
+            blood today and help save precious lives.
+          </p>
+
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+            <li><a href="blood-request.html"><i class="fa fa-angle-right"></i> Blood Request</a></li>
+            <li><a href="find-blood.html"><i class="fa fa-angle-right"></i> Find Blood</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li><i class="fa fa-check"></i> Blood Donation</li>
+            <li><i class="fa fa-check"></i> Emergency Blood Request</li>
+            <li><i class="fa fa-check"></i> Donor Registration</li>
+            <li><i class="fa fa-check"></i> Blood Availability</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+          <h3>Contact Info</h3>
+
+          <p><i class="fa fa-map-marker"></i> Chattogram, Bangladesh</p>
+          <p><i class="fa fa-phone"></i> +880 1813551732</p>
+          <p><i class="fa fa-envelope"></i> ms2150125@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blood Bank. All Rights Reserved. | Designed by MD. Sayeed</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/login.js"></script>
+  </body>
+</html>

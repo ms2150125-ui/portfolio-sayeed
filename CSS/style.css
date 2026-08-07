@@ -1,0 +1,201 @@
+/* ================= IMPORTS ================= */
+@import url("variables.css");
+@import url("home.css");
+@import url("footer.css");
+@import url("contact.css");
+@import url("login.css");
+@import url("pages.css");
+@import url("about.css");
+@import url("blood-request.css");
+@import url("find-blood.css");
+/* responsive.css is imported LAST so its breakpoints override earlier rules */
+@import url("responsive.css");
+
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    background:#b30000;
+    padding:15px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.left h2{
+    color:#fff;
+}
+
+.right ul{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.right ul li a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+}
+
+.right ul li a:hover{
+    color:#ffd4d4;
+}
+
+.right ul li a i{
+    font-size:16px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    min-height:90vh;
+    padding:60px 8%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    color:#b30000;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#b30000;
+    color:#fff;
+    padding:14px 32px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#8b0000;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    max-width:500px;
+    width:100%;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .right ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.5rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    .right ul{
+        flex-direction:column;
+        width:100%;
+        gap:15px;
+    }
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero-text h1{
+        font-size:2rem;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:1.7rem;
+    }
+
+    .hero-text p{
+        font-size:0.95rem;
+    }
+
+    .hero-image img{
+        max-width:320px;
+    }
+}
