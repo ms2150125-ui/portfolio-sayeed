@@ -1,0 +1,2 @@
+import { GitBranch, Network, Mail } from 'lucide-react'
+export default function SocialLinks() { return <div className="social-links"><a href="mailto:ms2150125@gmail.com"><Mail size={17} /> Email</a><a href="https://github.com/ms2150125-ui"><GitBranch size={17} /> GitHub</a><a href="https://linkedin.com/in/md-sayeed-13b79b42b"><Network size={17} /> LinkedIn</a></div> }

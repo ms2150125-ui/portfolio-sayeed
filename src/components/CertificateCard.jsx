@@ -1,0 +1,2 @@
+import { Award, ExternalLink } from 'lucide-react'
+export default function CertificateCard({ certificate }) { return <article className="certificate-card"><div className="certificate-icon"><Award size={19} /></div><div className="certificate-card__content"><span>{certificate.year}</span><h3>{certificate.title}</h3><p>{certificate.issuer}</p></div><a href="#contact" aria-label={`Ask about ${certificate.title}`}><ExternalLink size={16} /></a></article> }

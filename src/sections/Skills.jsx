@@ -1,0 +1,5 @@
+import { motion } from 'framer-motion'
+import SectionTitle from '../components/SectionTitle'
+import SkillCard from '../components/SkillCard'
+import { skills } from '../data/skills'
+export default function Skills() { return <section className="section section--surface" id="skills"><div className="container"><SectionTitle index="02" eyebrow="The toolkit" title="Skills in progress." description="A practical set of foundations I am actively developing through coursework and projects." /><motion.div className="skill-grid" initial="hidden" whileInView="show" viewport={{ once: true, amount: .2 }} variants={{ show: { transition: { staggerChildren: .08 } } }}>{skills.map((skill) => <motion.div key={skill.name} variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}><SkillCard skill={skill} /></motion.div>)}</motion.div></div></section> }

@@ -1,0 +1,4 @@
+import SectionTitle from '../components/SectionTitle'
+import ProjectCard from '../components/ProjectCard'
+import { projects } from '../data/projects'
+export default function Projects() { return <section className="section" id="work"><div className="container"><SectionTitle index="03" eyebrow="Selected projects" title="Things I've built while learning." description="Practical experiments, public repositories and a growing record of how I think through problems." /><div className="project-grid">{projects.map((project, index) => <ProjectCard project={project} index={index} key={project.title} />)}</div></div></section> }

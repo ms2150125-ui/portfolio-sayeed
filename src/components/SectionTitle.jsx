@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion'
+export default function SectionTitle({ index, eyebrow, title, description }) { return <motion.div className="section-heading" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .3 }} transition={{ duration: .5 }}><div><span className="section-index">{index}</span><div className="eyebrow">{eyebrow}</div><h2>{title}</h2></div>{description && <p>{description}</p>}</motion.div> }

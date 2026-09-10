@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion'
+export default function SkillCard({ skill }) { const Icon = skill.icon; return <motion.article className="skill-card" whileHover={{ y: -4 }}><div className="skill-icon"><Icon size={18} /></div><h3>{skill.name}</h3><p>{skill.items.join(' · ')}</p></motion.article> }

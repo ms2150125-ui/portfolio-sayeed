@@ -1,0 +1,2 @@
+import { Braces, Code2, Database, ShieldCheck } from 'lucide-react'
+export const skills = [{ name: 'Programming', items: ['C', 'C++', 'Python', 'JavaScript'], icon: Code2 }, { name: 'Web development', items: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'React'], icon: Braces }, { name: 'Tools & technologies', items: ['Git', 'GitHub', 'Linux', 'VS Code', 'REST APIs'], icon: Database }, { name: 'Currently learning', items: ['DSA', 'React', 'Cybersecurity', 'Automation', 'Advanced Python'], icon: ShieldCheck }]

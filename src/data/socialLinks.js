@@ -1,0 +1,1 @@
+export const socialLinks = [{ label: 'GitHub', url: 'https://github.com/ms2150125-ui' }, { label: 'LinkedIn', url: 'https://linkedin.com/in/md-sayeed-13b79b42b' }, { label: 'Email', url: 'mailto:ms2150125@gmail.com' }]

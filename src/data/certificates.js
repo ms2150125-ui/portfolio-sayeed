@@ -1,0 +1,1 @@
+export const certificates = [{ title: 'Computer Skills Training Program', issuer: 'UCEP Bangladesh · IT Support Service', year: '2025' }, { title: 'Introduction to Cryptography for Beginners', issuer: 'Simplilearn SkillUp', year: '2026' }]

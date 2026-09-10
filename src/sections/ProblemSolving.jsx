@@ -1,0 +1,4 @@
+import { ExternalLink } from 'lucide-react'
+import SectionTitle from '../components/SectionTitle'
+const platforms = [{ name: 'Codeforces', note: 'Algorithmic problem solving', href: '#' }, { name: 'CodeChef', note: 'Competitive programming practice', href: '#' }, { name: 'LeetCode', note: 'Data structures and patterns', href: '#' }]
+export default function ProblemSolving() { return <section className="section section--surface"><div className="container"><SectionTitle index="05" eyebrow="Problem solving" title="Thinking in systems." description="I practice programming problems to improve algorithmic thinking, patience and clarity." /><div className="platform-grid">{platforms.map((platform, index) => <a className="platform-card" href={platform.href} key={platform.name}><span>0{index + 1}</span><div><h3>{platform.name}</h3><p>{platform.note}</p></div><ExternalLink size={16} /></a>)}</div></div></section> }

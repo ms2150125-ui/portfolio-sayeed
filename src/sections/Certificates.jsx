@@ -1,0 +1,4 @@
+import SectionTitle from '../components/SectionTitle'
+import CertificateCard from '../components/CertificateCard'
+import { certificates } from '../data/certificates'
+export default function Certificates() { return <section className="section section--surface" id="certificates"><div className="container"><SectionTitle index="07" eyebrow="Certificates" title="Evidence of practice." description="Training and course work that complement my academic path." /><div className="certificate-grid">{certificates.map((certificate) => <CertificateCard certificate={certificate} key={certificate.title} />)}</div></div></section> }
