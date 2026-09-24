@@ -1,3 +1,43 @@
 import { motion } from 'framer-motion'
-const entries = [{ year: '2024', title: 'Started programming', text: 'Began building a foundation through programming practice and science studies.' }, { year: '2025', title: 'Web development & C / C++', text: 'Built frontend projects and continued strengthening core programming concepts.' }, { year: '2026', title: 'Python, DSA, Linux & cybersecurity', text: 'Expanding into algorithms, systems thinking, security fundamentals and React.' }]
-export default function Journey() { return <section className="section" id="journey"><div className="container"><div className="journey-heading"><div><span className="section-index">06</span><div className="eyebrow">The learning journey</div><h2>Still becoming.</h2></div><p>There is no shortcut around the fundamentals. Each year adds a new layer.</p></div><div className="timeline">{entries.map((entry, index) => <motion.article className="timeline__item" initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: index * .1 }} key={entry.year}><span className="timeline__year">{entry.year}</span><div><h3>{entry.title}</h3><p>{entry.text}</p></div></motion.article>)}</div></div></section> }
+
+const entries = [
+  { year: '2024', title: 'Started programming', text: 'Built a foundation through practical coding, academic learning, and continuous self-study in core technical concepts.' },
+  { year: '2025', title: 'Web development & C / C++', text: 'Developed frontend projects while strengthening problem solving, structured thinking, and software fundamentals.' },
+  { year: '2026', title: 'Python, DSA, Linux & cybersecurity', text: 'Expanded into systems thinking, networking, algorithmic practice, and security-focused learning with a growing hands-on approach.' }
+]
+
+export default function Experience() {
+  return (
+    <section className="section" id="experience">
+      <div className="container">
+        <div className="journey-heading">
+          <div>
+            <span className="section-index">04</span>
+            <div className="eyebrow">Experience</div>
+            <h2>Growing through practice.</h2>
+          </div>
+          <p>Each chapter has strengthened my ability to learn quickly, build responsibly, and solve real problems with technology.</p>
+        </div>
+
+        <div className="timeline">
+          {entries.map((entry, index) => (
+            <motion.article
+              className="timeline__item"
+              initial={{ opacity: 0, x: -16 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * .1 }}
+              key={entry.year}
+            >
+              <span className="timeline__year">{entry.year}</span>
+              <div>
+                <h3>{entry.title}</h3>
+                <p>{entry.text}</p>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

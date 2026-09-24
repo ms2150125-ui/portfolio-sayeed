@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { GitBranch, Network, Menu, X } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-const links = [['About', '#about'], ['Skills', '#skills'], ['Projects', '#work'], ['Photography', '#photography'], ['Journey', '#journey'], ['Certificates', '#certificates'], ['Contact', '#contact']]
+const links = [['About', '#about'], ['Skills', '#skills'], ['Featured Work', '#work'], ['Experience', '#experience'], ['Certifications', '#certifications'], ['Gallery', '#gallery'], ['Contact', '#contact']]
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
