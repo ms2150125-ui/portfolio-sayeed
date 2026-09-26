@@ -1,1 +1,1 @@
-export default function SkillCard({ skill }) { const Icon = skill.icon; return <article className="skill-card"><div className="skill-icon"><Icon size={18} aria-hidden="true" /></div><h3>{skill.name}</h3><p>{skill.items.join(' · ')}</p></article> }
+export default function SkillCard({ skill }) { const Icon = skill.icon; return <article className="skill-card" data-rgb-tooltip={`${skill.name} skills`}><div className="skill-icon"><Icon size={18} aria-hidden="true" /></div><h3>{skill.name}</h3><p>{skill.items.join(' · ')}</p></article> }

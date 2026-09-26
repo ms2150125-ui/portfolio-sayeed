@@ -1,4 +1,4 @@
-import { ArrowLeft, Moon, Sun } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import Footer from '../components/Footer'
 
 const documents = {
@@ -24,16 +24,13 @@ const documents = {
   },
 }
 
-export default function LegalPage({ type, theme, setTheme }) {
+export default function LegalPage({ type }) {
   const document = documents[type]
   return (
     <div className="legal-shell">
       <header className="legal-header">
         <a className="wordmark" href="/">MD<span>.</span> SAYEED</a>
-        <div className="legal-header__actions">
-          <button className="theme-toggle" type="button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>{theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}</button>
-          <a className="legal-back" href="/"><ArrowLeft size={16} aria-hidden="true" /> Portfolio</a>
-        </div>
+        <a className="legal-back" href="/"><ArrowLeft size={16} aria-hidden="true" /> Portfolio</a>
       </header>
       <main className="legal-content">
         <p className="eyebrow">Site information</p>

@@ -1,4 +1,4 @@
 import SectionTitle from '../components/SectionTitle'
 import ProjectCard from '../components/ProjectCard'
 import { projects } from '../data/projects'
-export default function Projects() { return <section className="section" id="work"><div className="container"><SectionTitle index="03" eyebrow="Featured Work" title="Selected projects and builds." description="A focused look at the practical work, problem solving, and product thinking behind my learning journey." /><div className="project-grid">{projects.map((project, index) => <ProjectCard project={project} index={index} key={project.title} />)}</div></div></section> }
+export default function Projects() { return <section className="section" id="work" data-rgb-tooltip="Projects and experiments"><div className="container"><SectionTitle index="03" eyebrow="Featured Work" title="Selected projects and builds." description="A focused look at the practical work, problem solving, and product thinking behind my learning journey." /><div className="project-grid">{projects.map((project, index) => <ProjectCard project={project} index={index} key={project.title} />)}</div></div></section> }

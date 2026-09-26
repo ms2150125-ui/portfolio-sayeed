@@ -2,7 +2,7 @@ import { Award, Download, Eye } from 'lucide-react'
 
 export default function CertificateCard({ certificate, onView, onDownload }) {
   return (
-    <article className="certificate-card">
+    <article className="certificate-card" data-rgb-tooltip={`Certificate · ${certificate.title}`}>
       <div className="certificate-card__media">
         <img
           src={certificate.image}

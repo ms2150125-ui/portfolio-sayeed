@@ -6,7 +6,7 @@ const entries = [
 
 export default function Experience() {
   return (
-    <section className="section" id="experience">
+    <section className="section" id="experience" data-rgb-tooltip="Learning journey">
       <div className="container">
         <div className="journey-heading">
           <div>
@@ -19,7 +19,7 @@ export default function Experience() {
 
         <div className="timeline">
           {entries.map((entry) => (
-            <article className="timeline__item" key={entry.year}>
+            <article className="timeline__item" key={entry.year} data-rgb-tooltip={entry.title}>
               <span className="timeline__year">{entry.year}</span>
               <div>
                 <h3>{entry.title}</h3>

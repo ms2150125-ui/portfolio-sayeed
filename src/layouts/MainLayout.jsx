@@ -10,10 +10,10 @@ import Photography from '../sections/Photography'
 import Education from '../sections/Education'
 import Contact from '../sections/Contact'
 
-export default function MainLayout({ theme, setTheme }) {
+export default function MainLayout() {
   return (
     <div className="site-shell">
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Navbar />
       <main>
         <Hero />
         <About />

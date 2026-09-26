@@ -48,7 +48,7 @@ export default function Certificates() {
   }
 
   return (
-    <section className="section section--surface" id="certifications">
+    <section className="section section--surface" id="certifications" data-rgb-tooltip="Certificates and milestones">
       <div className="container">
         <SectionTitle
           index="05"
