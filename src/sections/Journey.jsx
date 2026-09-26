@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 const entries = [
   { year: '2024', title: 'Started programming', text: 'Built a foundation through practical coding, academic learning, and continuous self-study in core technical concepts.' },
   { year: '2025', title: 'Web development & C / C++', text: 'Developed frontend projects while strengthening problem solving, structured thinking, and software fundamentals.' },
@@ -20,21 +18,14 @@ export default function Experience() {
         </div>
 
         <div className="timeline">
-          {entries.map((entry, index) => (
-            <motion.article
-              className="timeline__item"
-              initial={{ opacity: 0, x: -16 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * .1 }}
-              key={entry.year}
-            >
+          {entries.map((entry) => (
+            <article className="timeline__item" key={entry.year}>
               <span className="timeline__year">{entry.year}</span>
               <div>
                 <h3>{entry.title}</h3>
                 <p>{entry.text}</p>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
