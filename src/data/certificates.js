@@ -15,6 +15,19 @@ export const certificates = [
     downloadName: 'idea-gen-certificate-abu-sayeed.pdf'
   },
   {
+    id: 'claude-ai-fluency-foundations',
+    title: 'AI Fluency Framework Foundations',
+    issuer: 'Claude Academy',
+    date: '2026',
+    description:
+      'Completed the Claude Academy badge focused on practical AI fluency, structured prompting, and effective framework-based workflows.',
+    skills: ['AI', 'Prompting', 'Workflow Design'],
+    category: 'Programming',
+    image: '/certificates/claude-ai-fluency-framework-foundations-preview.svg',
+    pdf: '/certificates/claude-ai-fluency-framework-foundations.pdf',
+    downloadName: 'claude-ai-fluency-framework-foundations-abu-sayeed.pdf'
+  },
+  {
     id: 'cybersecurity-intro',
     title: 'Introduction to Cybersecurity',
     issuer: 'Cisco Networking Academy',
