@@ -2,6 +2,19 @@ export const certificateCategories = ['All', 'Cybersecurity', 'Programming', 'Ne
 
 export const certificates = [
   {
+    id: 'css-basic-hackerrank',
+    title: 'CSS (Basic)',
+    issuer: 'HackerRank',
+    date: '2026',
+    description:
+      'Passed the HackerRank CSS skill certification test, demonstrating foundational knowledge of styling web pages with CSS.',
+    skills: ['CSS', 'Web Development', 'Frontend'],
+    category: 'Web Development',
+    image: '/certificates/Pasted%20image.png',
+    pdf: '/certificates/css%20certificate.pdf',
+    downloadName: 'css-basic-certificate-abu-sayeed.pdf'
+  },
+  {
     id: 'idea-gen-2026',
     title: 'Inter-Semester Poster Presentation & Idea Gen’26',
     issuer: 'CCE Club, IIUC',
